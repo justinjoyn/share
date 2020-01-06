@@ -38,6 +38,10 @@ target 'share' do
     inherit! :search_paths
     # Pods for testing
   end
+  
+  target 'ShareExtension' do
+    inherit! :search_paths
+  end
 
   use_native_modules!
 end

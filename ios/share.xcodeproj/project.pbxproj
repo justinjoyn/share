@@ -19,6 +19,10 @@
 		2DCD954D1E0B4F2C00145EB5 /* shareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* shareTests.m */; };
 		7C0FCF6402B2530E2D5F54C5 /* libPods-shareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DDFB2064F0B111128FE5DF /* libPods-shareTests.a */; };
 		A88AD33092FD4DDDF1777014 /* libPods-share-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54165F350E743CA3E976380D /* libPods-share-tvOSTests.a */; };
+		AE62FCD98AF8464162E79293 /* libPods-ShareExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 749913672622018FC29E2344 /* libPods-ShareExtension.a */; };
+		D08588F823C38CFF00A7DE4D /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08588F723C38CFF00A7DE4D /* ShareViewController.m */; };
+		D08588FB23C38CFF00A7DE4D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08588F923C38CFF00A7DE4D /* MainInterface.storyboard */; };
+		D08588FF23C38CFF00A7DE4D /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D08588F423C38CFF00A7DE4D /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1C2872B0F1B4595A1310B5E /* libPods-share-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D83D3BDEA0CD4A1EC474E59 /* libPods-share-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +41,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "share-tvOS";
 		};
+		D08588FD23C38CFF00A7DE4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08588F323C38CFF00A7DE4D;
+			remoteInfo = ShareExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D085890023C38CFF00A7DE4D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D08588FF23C38CFF00A7DE4D /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -52,6 +77,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = share/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = share/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = share/main.m; sourceTree = "<group>"; };
+		1AC38B17833D4A3336FAA94E /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		21DAE69D53913C006D2009B9 /* Pods-share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share.debug.xcconfig"; path = "Target Support Files/Pods-share/Pods-share.debug.xcconfig"; sourceTree = "<group>"; };
 		2C4D3BBB789A2D706BCB63B5 /* Pods-shareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareTests.release.xcconfig"; path = "Target Support Files/Pods-shareTests/Pods-shareTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* share-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "share-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +88,15 @@
 		56D005CADE19A13C2EFF4921 /* Pods-shareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareTests.debug.xcconfig"; path = "Target Support Files/Pods-shareTests/Pods-shareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61E9E6EE71C4B548391CEC20 /* Pods-share-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-share-tvOSTests/Pods-share-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D83D3BDEA0CD4A1EC474E59 /* libPods-share-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-share-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		749913672622018FC29E2344 /* libPods-ShareExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		803873CCB2E0F63FA02DD46F /* libPods-share.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-share.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		883661A2075BDAEDC387B430 /* Pods-share-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-share-tvOS/Pods-share-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D08588F423C38CFF00A7DE4D /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08588F623C38CFF00A7DE4D /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		D08588F723C38CFF00A7DE4D /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		D08588FA23C38CFF00A7DE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D08588FC23C38CFF00A7DE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8CDB9EF933E3C9D83301942 /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F5F72A49AFC92F4D1B9EE20D /* Pods-share-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-share-tvOS.release.xcconfig"; path = "Target Support Files/Pods-share-tvOS/Pods-share-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +132,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88AD33092FD4DDDF1777014 /* libPods-share-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08588F123C38CFF00A7DE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE62FCD98AF8464162E79293 /* libPods-ShareExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +186,7 @@
 				6D83D3BDEA0CD4A1EC474E59 /* libPods-share-tvOS.a */,
 				54165F350E743CA3E976380D /* libPods-share-tvOSTests.a */,
 				48DDFB2064F0B111128FE5DF /* libPods-shareTests.a */,
+				749913672622018FC29E2344 /* libPods-ShareExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,8 +202,9 @@
 				61E9E6EE71C4B548391CEC20 /* Pods-share-tvOSTests.release.xcconfig */,
 				56D005CADE19A13C2EFF4921 /* Pods-shareTests.debug.xcconfig */,
 				2C4D3BBB789A2D706BCB63B5 /* Pods-shareTests.release.xcconfig */,
+				1AC38B17833D4A3336FAA94E /* Pods-ShareExtension.debug.xcconfig */,
+				D8CDB9EF933E3C9D83301942 /* Pods-ShareExtension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,6 +221,7 @@
 				13B07FAE1A68108700A75B9A /* share */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* shareTests */,
+				D08588F523C38CFF00A7DE4D /* ShareExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4CC5C392C5BAC250EAB505E2 /* Pods */,
@@ -194,8 +238,20 @@
 				00E356EE1AD99517003FC87E /* shareTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* share-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* share-tvOSTests.xctest */,
+				D08588F423C38CFF00A7DE4D /* ShareExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D08588F523C38CFF00A7DE4D /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D08588F623C38CFF00A7DE4D /* ShareViewController.h */,
+				D08588F723C38CFF00A7DE4D /* ShareViewController.m */,
+				D08588F923C38CFF00A7DE4D /* MainInterface.storyboard */,
+				D08588FC23C38CFF00A7DE4D /* Info.plist */,
+			);
+			path = ShareExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +286,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				D085890023C38CFF00A7DE4D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D08588FE23C38CFF00A7DE4D /* PBXTargetDependency */,
 			);
 			name = share;
 			productName = share;
@@ -279,6 +337,24 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* share-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D08588F323C38CFF00A7DE4D /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D085890323C38CFF00A7DE4D /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				AE10B2AD586002660AFED5E7 /* [CP] Check Pods Manifest.lock */,
+				D08588F023C38CFF00A7DE4D /* Sources */,
+				D08588F123C38CFF00A7DE4D /* Frameworks */,
+				D08588F223C38CFF00A7DE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = D08588F423C38CFF00A7DE4D /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +377,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
+					D08588F323C38CFF00A7DE4D = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "share" */;
@@ -308,6 +388,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -320,6 +401,7 @@
 				00E356ED1AD99517003FC87E /* shareTests */,
 				2D02E47A1E0B4A5D006451C7 /* share-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* share-tvOSTests */,
+				D08588F323C38CFF00A7DE4D /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +435,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08588F223C38CFF00A7DE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08588FB23C38CFF00A7DE4D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +565,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AE10B2AD586002660AFED5E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,6 +662,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D08588F023C38CFF00A7DE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08588F823C38CFF00A7DE4D /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -563,6 +683,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* share-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		D08588FE23C38CFF00A7DE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08588F323C38CFF00A7DE4D /* ShareExtension */;
+			targetProxy = D08588FD23C38CFF00A7DE4D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -573,6 +698,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = share;
+			sourceTree = "<group>";
+		};
+		D08588F923C38CFF00A7DE4D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D08588FA23C38CFF00A7DE4D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -869,6 +1002,56 @@
 			};
 			name = Release;
 		};
+		D085890123C38CFF00A7DE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC38B17833D4A3336FAA94E /* Pods-ShareExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.share.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D085890223C38CFF00A7DE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CDB9EF933E3C9D83301942 /* Pods-ShareExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.share.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -913,6 +1096,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D085890323C38CFF00A7DE4D /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D085890123C38CFF00A7DE4D /* Debug */,
+				D085890223C38CFF00A7DE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
